@@ -1,10 +1,3 @@
-先演示一波动态图：
-
-![整体效果.gif](http://upload-images.jianshu.io/upload_images/4043475-1015dbce5faa6a90.gif?imageMogr2/auto-orient/strip)
-
-> 话说这个布局就花了我半个小时...
-
-> 一些基础的我就不说了，就简单说明一下我的数据是如何爬到的。可以直接去看一下我的源码，写的比较仓促，一些细节没有处理好，多多指教。
 
 # 1. 准备 #
 #### 1. 相关资料 ####
@@ -76,7 +69,6 @@
 	String authorLink = element.select("a.blue-link").attr("abs:href")
 > 这里注意 `href` 元素，他存放的就是跳转链接，不过是相对路径，这个时候就需要通过 `attr("abs:href")` 获取绝对路径。
 
-其他 就 大同小异，其实我知道也就这么多，也是不断尝试通过打印得出来的，还是比较心酸的，比较没学过 `js`，不过对 `js` 挺有兴趣的。
 # 3. 封装 #
 剩下的就是将获取到的数据加载到bean对象中 
 
